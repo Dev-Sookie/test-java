@@ -1,0 +1,52 @@
+<html>
+
+<head>
+
+<title>Calculator</title>
+
+<script type=text/javascript>
+
+function calculator() {
+while (operation != 0) {
+
+var operation = prompt("What would you like to do?\n\n0. End the program\n1. Do addition\n2. Do subtraction\n3. Do multiplication\n4. Do division\n5. Do square root\n", "Enter your selection here");
+
+if (operation == 1) {
+var num1 = prompt("Enter the first number");
+var num2 = prompt("Enter the second number");
+alert ("The sum is " + (Number(num1)+Number(num2)));
+
+} else if (operation == 2) {
+var num1 = prompt("Enter the first number");
+var num2 = prompt("Enter the second number");
+alert ("The difference is " + (Number(num1)-Number(num2)));
+
+} else if (operation == 3) {
+var num1 = prompt("Enter the first number");
+var num2 = prompt("Enter the second number");
+alert ("The product is " + (Number(num1)*Number(num2)));
+
+} else if (operation == 4) {
+var num1 = prompt("Enter the first number");
+var num2 = prompt("Enter the second number");
+alert ("The quotient is " + (Number(num1)/Number(num2)));
+
+} else if (operation == 5) {
+var num1 = prompt("Enter the number");
+alert ("The square root is " + Math.sqrt(Number(num1)));
+}
+}
+}
+</script>
+
+</head>
+
+<body>
+
+<center>
+<input type=button value="Calculator" onClick="calculator()">
+</center>
+
+</body>
+
+</html>
